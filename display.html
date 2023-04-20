@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+<form methods="GET" action="">
+{% for post in posts %}
+<table class="table table-dark">
+    <div class="container p-3 my-3 bg-dark text-white">
+        <ul class="list-group">
+            <p class="bg-secondary text-white">{{post.Name}}</p>
+            <p class="bg-secondary text-white">{{post.Organisation}}</p>
+            <p class="bg-secondary text-white">{{post.DOJ}}</p>
+            <p class="bg-secondary text-white">{{post.DOE}}</p>
+        </ul>
+<!-- {{post.Name}}<br>
+{{post.Organisation}}<br>
+{{post.DOJ}}<br>
+{{post.DOE}}<br>
+<br> -->
+    </div>
+</form>
+{% endfor %}
+{% endblock %}

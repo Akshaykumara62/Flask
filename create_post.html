@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="Content_section">
+    <form methods="POST" action="">
+            <legend class="border=bottom mb-4"> {{legend}}</legend>
+            
+            <div class="w3-panel w3-border">
+                <label for="Name" class="form-label">Name:</label>
+                <input type="Name" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+              </div>
+              <div class=class="w3-panel w3-border-left">
+                <label for="Organisation" class="form-label">Organisation:</label>
+                <input type="Organisation" class="form-control" id="Organisation" placeholder="Enter Organisation" name="Organisation">
+              </div>
+              <button type="submit" class="btn btn-primary">Post</button>
+                
+            
+    </form>
+</div>
+
+
+
+{% endblock %}
